@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    height: 2.1vh;
+    background-color: gray;
+    width: 100vw;
+    text-align: center;
+}
+
+footer::before {
+    content: "Copyright 2022 Nikolaas Daem";
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: cadetblue;
+    position: relative;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+.list {
+    position: relative;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+li {
+    padding: 1vh;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    background: tomato;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+img {
+    height: 30vw;
+    width: 30vw;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: grey;
+    width: 30vw
+}
+
+.card>* {
+    padding: 2vh;
+}
+
+.desc {
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.header>div {
+    display: flex;
+    width: 4em;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: tomato;
+}
+
+.header>div:hover {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+li>img {
+    height: 20vw;
+    width: 20vw
+}
+
+form {
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form>* {
+    padding: 1vh;
+    border-radius: 10px;
+    border: none
+}
+
+button {
+    border-radius: 2rem;
+    width: 10vw;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    height: 10vh
+}
+
+.itemList>* {
+    padding: 1vh;
+}
+
+.itemList>div>button {
+    width: 60%;
+    background-color: aliceblue;
+}
+
+.addBtn:hover {
+    background-color: lightgreen;
+}
+
+.rmvBtn:hover {
+    background-color: rgba(238, 70, 3, 0.925);
+}
+
+.orderBtn {
+    width: 100%;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.orderBtn:hover {
+    background-color: lightgreen;
+}
+
+.orderList {
+    height: 30vh;
+    width: 20vw;
+    position: fixed;
+    top: 15vh;
+    left: 70vw;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orderListHeader {
+    text-decoration: underline;
+    padding-top: 1vh;
+    font-size: 2vw;
+    font-weight: bold;
+    padding-bottom: 1vh;
+}
+
+.orderListBtn {
+    position: fixed;
+    top: 38vh;
+}
+
+.orderListBtn:hover {
+    background-color: lightgreen;
+}
+
+.removeListBtn {
+    position: fixed;
+    top: 40vh;
+}
+
+.removeListBtn:hover {
+    background-color: rgba(238, 70, 3, 0.925);
+}
+
+.orderedItemsList>div {
+    width: 18vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonDiv {
+    display: flex;
+    gap: 1vw;
+}
+
+.totalAmount {
+    height: 2vw;
+    width: auto;
+    position: fixed;
+    top: 42vh;
+}
+
+.totalAmount::before {
+    content: "total: €"
+}
+
+.priceDiv::before {
+    content: "€";
+}
+
+.priceDiv>div:first-of-type::before {
+    content: " ";
+}
